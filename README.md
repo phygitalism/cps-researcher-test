@@ -40,7 +40,7 @@
  
 где <a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;\hat{f}&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;\hat{f}&space;$$" title="$$ \hat{f} $$" /></a>  - непрерывная функция, которую требуется восстановить используя предоставленный набор данных `Regression_Test.json`.
 
-- Восстановить коэффициент k и выяснить каким либо способом что происходит с системой спустя длительное время если она стартует из 
+- Восстановить коэффициент k и выяснить каким либо способом что происходит с системой спустя длительное время (устойчива ли система, неустойчива или стремиться к асимптотически фиксированному состоянию) если она стартует из состояния покоя (координата и все производные до 3 порядка включительно равны нулю).
 - Промоделировать систему для разных воздействий g и построить графики "Воздействие - Отклик" <a href="https://www.codecogs.com/eqnedit.php?latex=$(x(t),g(t),t)$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$(x(t),g(t),t)$" title="$(x(t),g(t),t)$" /></a>.
 - Восстановление закона <a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;\hat{f}(x)&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;\hat{f}(x)&space;$$" title="$$ \hat{f}(x) $$" /></a> произвести с использование нейронной сети.
 
