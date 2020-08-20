@@ -6,20 +6,15 @@
 - Рассуждения по решению аналитических заданий можно оформить от руки, но желательно представить результаты в PDF с оформленным выводом (LaTeX или MathType).
 - Каждое задание относится к тому или иному разделу машинного обучения или математического моделирования. Помимо решения задачи необходимо рассмотреть какую-либо статью, вышедшую в последние полгода на тему, связанную с заданием, и предложить как можно было бы использовать результаты этой статьи для решения данной задачи или анологичных данной.
 
+Текст заданий для удобства продублирован в jupyter notebook `tasks.ipynb`.
+
 ## 1. Задание с теоретико-математическим смещением. (Оптимизация)
 
 Заданы две функции:
 
-<a href="https://latex.codecogs.com/gif.latex?f_1%28x%2Cy%29%3D%5Cfrac%7B1%7D%7B2%7D-%5Cfrac%7B%5Csin%5E2%28%5Csqrt%7Bx%5E2&plus;y%5E2%7D%29-%5Cfrac%7B1%7D%7B2%7D%7D%7B1&plus;%5Cfrac%7Bx%5E2&plus;y%5E2%7D%7B1000%7D%7D%20%2C%20x%2Cy%20%5Cin%20%5Cmathbb%7BR%7D" target="_blank">
+<a href="https://latex.codecogs.com/gif.latex?%5C%5C%20f_1%28x%2Cy%29%3D%5Cfrac%7B1%7D%7B2%7D-%5Cfrac%7B%5Csin%5E2%28%5Csqrt%7Bx%5E2%20&plus;%20y%5E2%7D%29-%5Cfrac%7B1%7D%7B2%7D%7D%7B1%20&plus;%20%5Cfrac%7Bx%5E2%20&plus;%20y%5E2%7D%7B1000%7D%7D%5C%3B%2C%5C%3Bx%2Cy%5C%3B%5Cin%5C%3B%5Cmathbb%7BR%7D%20%5C%5C%20f_2%28z%29%3D%5Cfrac%7B1%7D%7B1%20&plus;%20%7Cz%5E6-1%7C%7D%5C%3B%2C%5C%3Bz%5C%3B%5Cin%5C%3B%5Cmathbb%7BC%7D%2C%5C%3B%20z%3Dx&plus;iy" target="_blank">
 
-<img src="https://latex.codecogs.com/gif.latex?f_1%28x%2Cy%29%3D%5Cfrac%7B1%7D%7B2%7D-%5Cfrac%7B%5Csin%5E2%28%5Csqrt%7Bx%5E2&plus;y%5E2%7D%29-%5Cfrac%7B1%7D%7B2%7D%7D%7B1&plus;%5Cfrac%7Bx%5E2&plus;y%5E2%7D%7B1000%7D%7D%20%2C%20x%2Cy%20%5Cin%20%5Cmathbb%7BR%7D"  />
-</a>
-
-     
-
-<a href="https://latex.codecogs.com/gif.latex?f_2%28z%29%3D%5Cfrac%7B1%7D%7B1%26plus%3B%7Cz%5E6-1%7C%7D%26space%3B%2C%26space%3Bz%26space%3B%5Cin%26space%3B%5Cmathbb%7BC%7D%2Cz%3Dx%26plus%3Biy%26space%3B" target="_blank">
- 
-<img src="https://latex.codecogs.com/gif.latex?f_2%28z%29%3D%5Cfrac%7B1%7D%7B1%26plus%3B%7Cz%5E6-1%7C%7D%26space%3B%2C%26space%3Bz%26space%3B%5Cin%26space%3B%5Cmathbb%7BC%7D%2Cz%3Dx%26plus%3Biy%26space%3B" title="$$f_2(z)=\frac{1}{1+|z^6-1|} , z \in \mathbb{C},z=x+iy $$" />
+<img src="https://latex.codecogs.com/gif.latex?%5C%5C%20f_1%28x%2Cy%29%3D%5Cfrac%7B1%7D%7B2%7D-%5Cfrac%7B%5Csin%5E2%28%5Csqrt%7Bx%5E2%20&plus;%20y%5E2%7D%29-%5Cfrac%7B1%7D%7B2%7D%7D%7B1%20&plus;%20%5Cfrac%7Bx%5E2%20&plus;%20y%5E2%7D%7B1000%7D%7D%5C%3B%2C%5C%3Bx%2Cy%5C%3B%5Cin%5C%3B%5Cmathbb%7BR%7D%20%5C%5C%20f_2%28z%29%3D%5Cfrac%7B1%7D%7B1%20&plus;%20%7Cz%5E6-1%7C%7D%5C%3B%2C%5C%3Bz%5C%3B%5Cin%5C%3B%5Cmathbb%7BC%7D%2C%5C%3B%20z%3Dx&plus;iy"  />
 </a>
 
 - Найти аналитически глобальные максимумы этих функций.
